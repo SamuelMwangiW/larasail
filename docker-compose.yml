@@ -1,0 +1,9 @@
+version: '3'
+services:
+    larasail:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: devdojo/larasail
+        volumes:
+            - '.larasail:/etc/.larasail'
